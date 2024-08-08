@@ -1,0 +1,172 @@
+.App {
+  height: 100%;
+  background-color: lightsteelblue;
+  display: grid;
+  grid-template-areas:
+      "transactions transactions"
+      "budget savings"
+      "budget savings";
+
+}
+
+body {
+  height:100%;
+}
+
+
+/*                BUDGET                   */
+.budget {
+  grid-area: budget;
+  background-color: indianred;
+  height: 60vh;
+
+}
+
+
+
+
+
+
+
+/*             TRANSACTIONS               */
+
+.transactions {
+  grid-area: transactions;
+  background-color: deepskyblue;
+  height: 40vh;
+}
+
+.row-transaction {
+  width: 80%;
+  align-self: center;
+}
+
+.new-transaction-container {
+  padding: 0.5em;
+  background: pink;
+  margin: auto;
+}
+
+
+.save-transaction{
+  display: flex;
+  align-self: center;
+}
+
+.titles {
+  width: 25%;
+  margin: 0 0 0 auto;
+  text-align: end;
+  position: relative;
+  right: 30em;
+}
+
+
+
+
+
+
+
+
+
+
+/*              SAVINGS                    */
+.savings {
+  grid-area: savings;
+  background-color: darkcyan;
+  height: 60vh;
+}
+
+
+
+
+
+
+
+
+
+/*               SHARED  STYLES                 */
+
+.budget,
+.transactions,
+.savings {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: scroll;
+}
+
+.budget-titles,
+.savings-titles,
+.titles {
+  display: flex;
+  font-size: small;
+
+}
+
+.budget-titles, .savings-titles {
+  width: 70%;
+  margin: 0 auto;
+
+
+}
+
+.budget-titles svg, .savings-titles svg {
+  margin:auto;
+}
+
+.row-transaction,
+.row-savings,
+.row-budget {
+  display: flex;
+
+}
+
+.row-savings,
+.row-budget {
+  margin: 0 auto;
+  padding: 1px;
+}
+
+h1 {
+  text-align: center;
+  background-color: grey;
+}
+
+
+
+.delete-button-container {
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 10em;
+  height: 2em;
+}
+
+
+.trans-name,
+.options,
+.expend,
+.income {
+  flex-grow: 1;
+}
+
+
+.amount-children,
+.savings-total {
+  background-color: white;
+  width: 10em;
+
+}
+
+h3 {
+  flex-grow: 1;
+}
+
+.newbutton {
+  padding: 0 2em;
+  height: 2em;
+}
+
+input {
+  vertical-align: top;
+}
